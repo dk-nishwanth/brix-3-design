@@ -54,7 +54,7 @@ const Navbar: React.FC<NavbarProps> = ({ activePage, setActivePage }) => {
                 <button 
                   key={item.id}
                   onClick={() => handleNav(item.id)}
-                  className={`text-[10px] font-bold tracking-[0.4em] uppercase transition-all duration-500 hover:text-[#165a72] ${activePage === item.id ? 'text-[#165a72]' : 'text-black/30'}`}
+                  className={`text-[10px] font-bold tracking-[0.4em] uppercase transition-all duration-500 hover:text-[#165a72] ${activePage === item.id ? 'text-[#165a72]' : 'text-black/60'}`}
                 >
                   {item.name}
                 </button>

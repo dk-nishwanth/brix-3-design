@@ -16,11 +16,11 @@ export const HERO_SLIDES = [
     text: "Enabling excellence through cutting-edge software solutions and training" 
   },
   { 
-    title: "Software Development Excellence", 
+    title: "Software Development", 
     text: "Premium Knowledge Transfer for software engineering and development teams" 
   },
   { 
-    title: "Modern Workspace Solutions", 
+    title: "Modern Tech Solutions", 
     text: "Enabling young minds with lasting efficiency through technology and innovation" 
   },
   { 

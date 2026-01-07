@@ -35,7 +35,7 @@ const App: React.FC = () => {
               style={{ width: `${progress}%` }}
             />
           </div>
-          <div className="flex justify-between items-center text-[9px] font-bold tracking-[0.5em] text-[#165a72]/30 uppercase">
+          <div className="flex justify-between items-center text-[9px] font-bold tracking-[0.5em] text-[#165a72]/60 uppercase">
             <span>Systems Online</span>
             <span>{progress}%</span>
           </div>

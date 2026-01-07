@@ -34,13 +34,13 @@ const Footer: React.FC<FooterProps> = ({ setActivePage }) => {
             </h2>
             <div className="flex gap-10">
               {['LinkedIn', 'Instagram', 'Twitter'].map(s => (
-                <a key={s} href="#" className="text-[10px] font-bold tracking-[0.5em] text-[#165a72]/30 uppercase hover:text-[#ed1c24] transition-colors">{s}</a>
+                <a key={s} href="#" className="text-[10px] font-bold tracking-[0.5em] text-[#165a72]/60 uppercase hover:text-[#ed1c24] transition-colors">{s}</a>
               ))}
             </div>
           </div>
 
           <div className="lg:col-span-3">
-            <span className="text-[10px] font-bold tracking-[0.6em] text-black/10 uppercase mb-12 block">Structure</span>
+            <span className="text-[10px] font-bold tracking-[0.6em] text-black/40 uppercase mb-12 block">Structure</span>
             <ul className="space-y-6">
               {sections.map(s => (
                 <li key={s.id}>
@@ -56,7 +56,7 @@ const Footer: React.FC<FooterProps> = ({ setActivePage }) => {
           </div>
 
           <div className="lg:col-span-3">
-            <span className="text-[10px] font-bold tracking-[0.6em] text-black/10 uppercase mb-12 block">Connect</span>
+            <span className="text-[10px] font-bold tracking-[0.6em] text-black/40 uppercase mb-12 block">Connect</span>
             <div className="space-y-12">
               <div>
                 <p className="text-xs font-bold text-[#165a72] uppercase tracking-[0.4em] mb-4">India / Bangalore</p>
@@ -74,10 +74,10 @@ const Footer: React.FC<FooterProps> = ({ setActivePage }) => {
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-20 border-t border-black/5 gap-10">
-          <div className="text-[9px] font-bold text-black/10 uppercase tracking-[0.5em]">
+          <div className="text-[9px] font-bold text-black/40 uppercase tracking-[0.5em]">
             Authorized Training Partner / Extreme Networks
           </div>
-          <div className="text-[9px] font-bold tracking-[0.5em] text-[#165a72]/30 uppercase">
+          <div className="text-[9px] font-bold tracking-[0.5em] text-[#165a72]/60 uppercase">
             © 2025 / BRiX Network Pvt Ltd
           </div>
         </div>

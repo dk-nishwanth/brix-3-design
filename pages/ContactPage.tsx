@@ -20,7 +20,7 @@ const ContactPage: React.FC = () => {
             <div key={info.label} className="flex gap-10 items-center">
               <div className="w-20 h-20 bg-[#165a72]/5 flex items-center justify-center rounded-3xl">{info.icon}</div>
               <div>
-                <span className="text-[10px] font-bold tracking-widest text-black/20 uppercase block mb-1">{info.label}</span>
+                <span className="text-[10px] font-bold tracking-widest text-black/50 uppercase block mb-1">{info.label}</span>
                 <p className="text-3xl font-heading font-bold text-[#165a72]">{info.value}</p>
               </div>
             </div>
@@ -52,7 +52,7 @@ const ContactPage: React.FC = () => {
           <div className="mb-16 text-center">
             <span className="text-[10px] font-bold tracking-[0.6em] text-[#165a72] mb-8 block uppercase">Location</span>
             <h2 className="font-heading text-6xl md:text-8xl font-bold tracking-tighter uppercase leading-[0.85] text-[#165a72]">
-              Find <span className="text-[#ed1c24]/10 italic">Us</span>
+              Find <span className="text-[#ed1c24]/30 italic">Us</span>
             </h2>
           </div>
           

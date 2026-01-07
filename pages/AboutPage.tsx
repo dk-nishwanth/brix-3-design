@@ -3,7 +3,7 @@ import { ArrowUpRight } from 'lucide-react';
 
 const KernMetadata = ({ label, value }: { label: string; value: string }) => (
   <div className="flex flex-col gap-1">
-    <span className="text-[10px] font-bold tracking-[0.4em] text-[#165a72]/40 uppercase">{label}</span>
+    <span className="text-[10px] font-bold tracking-[0.4em] text-[#165a72]/70 uppercase">{label}</span>
     <span className="text-xs font-medium text-black/80 tracking-wider uppercase">{value}</span>
   </div>
 );
@@ -34,7 +34,7 @@ const AboutPage: React.FC = () => {
               ].map(v => (
                 <div key={v.t} className="p-12 bg-white flex flex-col justify-between aspect-square group">
                   <h4 className={`font-heading font-bold uppercase tracking-widest transition-colors group-hover:text-black`} style={{ color: v.c + '40' }}>{v.t}</h4>
-                  <p className="text-[10px] text-black/40 leading-relaxed uppercase tracking-widest">{v.d}</p>
+                  <p className="text-[10px] text-black/60 leading-relaxed uppercase tracking-widest">{v.d}</p>
                 </div>
               ))}
             </div>

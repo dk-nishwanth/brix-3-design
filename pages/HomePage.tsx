@@ -5,7 +5,7 @@ import { HERO_SLIDES } from '../constants';
 
 const KernMetadata = ({ label, value }: { label: string; value: string }) => (
   <div className="flex flex-col gap-1">
-    <span className="text-[10px] font-bold tracking-[0.4em] text-[#165a72]/40 uppercase">{label}</span>
+    <span className="text-[10px] font-bold tracking-[0.4em] text-[#165a72]/70 uppercase">{label}</span>
     <span className="text-xs font-medium text-black/80 tracking-wider uppercase">{value}</span>
   </div>
 );
@@ -32,7 +32,7 @@ const HomePage: React.FC<HomePageProps> = ({ setActivePage }) => {
           <motion.div
             key={activeSlide}
             initial={{ opacity: 0, scale: 1.02 }}
-            animate={{ opacity: 0.9, scale: 1 }}
+            animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.99 }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
             className="absolute inset-0 z-0"
@@ -46,13 +46,13 @@ const HomePage: React.FC<HomePageProps> = ({ setActivePage }) => {
                 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1920&q=80',
                 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1920&q=80'
               ][activeSlide]} 
-              className="w-full h-full object-cover grayscale brightness-110 contrast-105" 
+              className="w-full h-full object-cover brightness-90 contrast-110" 
               alt="Corporate Environment"
             />
-            {/* Brand Gradient Overlays */}
-            <div className="absolute inset-0 bg-gradient-to-r from-white via-white/40 to-transparent" />
-            <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent opacity-90" />
-            <div className="absolute inset-0 bg-[#165a72]/5" />
+            {/* Brand Gradient Overlays - Reduced opacity for better image visibility */}
+            <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-white/20 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-white/70 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-[#165a72]/3" />
           </motion.div>
         </AnimatePresence>
 
@@ -71,10 +71,10 @@ const HomePage: React.FC<HomePageProps> = ({ setActivePage }) => {
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
             className="max-w-[95%]"
           >
-            <h1 className="font-heading text-6xl md:text-[9.5vw] font-bold tracking-tighter uppercase text-black leading-[0.82] mb-10">
+            <h1 className="font-heading text-6xl md:text-[9.5vw] font-bold tracking-tighter uppercase text-[#165a72] leading-[0.82] mb-10">
               {HERO_SLIDES[activeSlide].title}
             </h1>
-            <p className="text-black text-xl md:text-2xl font-medium leading-relaxed max-w-2xl bg-white/60 backdrop-blur-md p-6 border-l-4 border-[#165a72]">
+            <p className="text-[#165a72]/90 text-xl md:text-2xl font-medium leading-relaxed max-w-2xl bg-white/80 backdrop-blur-lg p-6 border-l-4 border-[#165a72] shadow-lg">
               {HERO_SLIDES[activeSlide].text}
             </p>
           </motion.div>
@@ -85,40 +85,40 @@ const HomePage: React.FC<HomePageProps> = ({ setActivePage }) => {
           <div className="flex animate-marquee whitespace-nowrap">
             {/* First set of clients */}
             <div className="flex items-center gap-16 mr-16">
-              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/30 hover:text-[#165a72] transition-colors">Extreme Networks</span>
+              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/60 hover:text-[#165a72] transition-colors">Extreme Networks</span>
               <div className="w-1.5 h-1.5 bg-[#ed1c24] rounded-full" />
-              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/30 hover:text-[#165a72] transition-colors">Wipro</span>
+              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/60 hover:text-[#165a72] transition-colors">Wipro</span>
               <div className="w-1.5 h-1.5 bg-[#ed1c24] rounded-full" />
-              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/30 hover:text-[#165a72] transition-colors">Infosys</span>
+              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/60 hover:text-[#165a72] transition-colors">Infosys</span>
               <div className="w-1.5 h-1.5 bg-[#ed1c24] rounded-full" />
-              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/30 hover:text-[#165a72] transition-colors">TCS</span>
+              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/60 hover:text-[#165a72] transition-colors">TCS</span>
               <div className="w-1.5 h-1.5 bg-[#ed1c24] rounded-full" />
-              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/30 hover:text-[#165a72] transition-colors">Tech Mahindra</span>
+              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/60 hover:text-[#165a72] transition-colors">Tech Mahindra</span>
               <div className="w-1.5 h-1.5 bg-[#ed1c24] rounded-full" />
-              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/30 hover:text-[#165a72] transition-colors">HCL Technologies</span>
+              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/60 hover:text-[#165a72] transition-colors">HCL Technologies</span>
               <div className="w-1.5 h-1.5 bg-[#ed1c24] rounded-full" />
-              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/30 hover:text-[#165a72] transition-colors">Accenture</span>
+              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/60 hover:text-[#165a72] transition-colors">Accenture</span>
               <div className="w-1.5 h-1.5 bg-[#ed1c24] rounded-full" />
-              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/30 hover:text-[#165a72] transition-colors">Cognizant</span>
+              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/60 hover:text-[#165a72] transition-colors">Cognizant</span>
               <div className="w-1.5 h-1.5 bg-[#ed1c24] rounded-full" />
             </div>
             {/* Duplicate set for seamless loop */}
             <div className="flex items-center gap-16 mr-16">
-              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/30 hover:text-[#165a72] transition-colors">Extreme Networks</span>
+              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/60 hover:text-[#165a72] transition-colors">Extreme Networks</span>
               <div className="w-1.5 h-1.5 bg-[#ed1c24] rounded-full" />
-              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/30 hover:text-[#165a72] transition-colors">Wipro</span>
+              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/60 hover:text-[#165a72] transition-colors">Wipro</span>
               <div className="w-1.5 h-1.5 bg-[#ed1c24] rounded-full" />
-              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/30 hover:text-[#165a72] transition-colors">Infosys</span>
+              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/60 hover:text-[#165a72] transition-colors">Infosys</span>
               <div className="w-1.5 h-1.5 bg-[#ed1c24] rounded-full" />
-              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/30 hover:text-[#165a72] transition-colors">TCS</span>
+              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/60 hover:text-[#165a72] transition-colors">TCS</span>
               <div className="w-1.5 h-1.5 bg-[#ed1c24] rounded-full" />
-              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/30 hover:text-[#165a72] transition-colors">Tech Mahindra</span>
+              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/60 hover:text-[#165a72] transition-colors">Tech Mahindra</span>
               <div className="w-1.5 h-1.5 bg-[#ed1c24] rounded-full" />
-              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/30 hover:text-[#165a72] transition-colors">HCL Technologies</span>
+              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/60 hover:text-[#165a72] transition-colors">HCL Technologies</span>
               <div className="w-1.5 h-1.5 bg-[#ed1c24] rounded-full" />
-              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/30 hover:text-[#165a72] transition-colors">Accenture</span>
+              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/60 hover:text-[#165a72] transition-colors">Accenture</span>
               <div className="w-1.5 h-1.5 bg-[#ed1c24] rounded-full" />
-              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/30 hover:text-[#165a72] transition-colors">Cognizant</span>
+              <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-[#165a72]/60 hover:text-[#165a72] transition-colors">Cognizant</span>
               <div className="w-1.5 h-1.5 bg-[#ed1c24] rounded-full" />
             </div>
           </div>
@@ -216,9 +216,9 @@ const HomePage: React.FC<HomePageProps> = ({ setActivePage }) => {
           <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1920&q=80" alt="Background" className="w-full h-full object-cover" />
         </div>
         <div className="max-w-5xl mx-auto px-6 relative z-10">
-          <span className="text-[10px] font-bold tracking-[1.2em] text-[#165a72]/30 mb-16 block uppercase">CALL TO ACTION</span>
+          <span className="text-[10px] font-bold tracking-[1.2em] text-[#165a72]/60 mb-16 block uppercase">CALL TO ACTION</span>
           <h2 className="font-heading text-6xl md:text-[10vw] font-bold tracking-tighter uppercase mb-16 text-[#165a72] leading-[0.8]">
-            BRIX | <br /><span className="text-[#ed1c24]/10 italic font-normal">Excellence is a Habit</span>
+            BRIX | <br /><span className="text-[#ed1c24]/30 italic font-normal">Excellence is a Habit</span>
           </h2>
           <button onClick={() => setActivePage('contact')} className="group relative px-20 py-8 bg-[#165a72] text-white font-bold uppercase tracking-[0.5em] text-[10px] overflow-hidden transition-all duration-700 hover:scale-105 active:scale-95 shadow-2xl">
             <span className="relative z-10">Call Us Now</span>

@@ -17,7 +17,7 @@ const CareerPage: React.FC = () => {
             <div className="flex justify-between items-start mb-12">
               <div>
                 <h3 className="font-heading text-4xl font-bold uppercase mb-4 text-[#165a72]">{job.title}</h3>
-                <span className="text-[10px] font-bold tracking-widest text-black/30 uppercase">{job.experience} / {job.location}</span>
+                <span className="text-[10px] font-bold tracking-widest text-black/60 uppercase">{job.experience} / {job.location}</span>
               </div>
               <button className="p-4 bg-white border border-[#165a72]/20 rounded-full hover:bg-[#ed1c24] hover:text-white transition-all">
                  <ArrowUpRight size={24} />
